@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hero-banner {
+    background-color: #0077b5;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-banner h2 {
+    margin: 0;
+}
+
+.page-wrapper {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-section {
+    margin: 20px 0;
+}
+
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjusted to set maximum width to 150px */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.page-section.contact {
+    text-align: center;
+}
+
+/* Styles for each placeholder class */
+.idplaceloderone img,
+.idplacelodertwo img,
+.idplaceloderthree img,
+.idplaceloderfour img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjusted to set maximum width to 150px */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
