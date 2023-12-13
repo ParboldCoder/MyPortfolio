@@ -7,68 +7,145 @@
     <title>Darren Buck // Web Developer</title>
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)">
 </head>
 <body>
-    <header>
-        <h1>Darren Buck</h1>
-        <img src="../assets/Darren Buck.jpg" alt="Darren Buck">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section class="hero-banner">
-        <div>
-            <b><p> Hi, I'm Darren. I'm a Web Developer.
-            </p></b>
+    <div class="dropdown">
+        <button class="dropbtn">Menu
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact</a>
         </div>
-    </section>
+    </div>
+
+    <head {
+        text-align: center;
+        padding: 20px;
+      }
+  
+      .profile-container {
+        perspective: 1000px;
+        display: inline-block;
+      }
+  
+      .profile-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 30%;
+        background-image: url('../assets/Darren Buck.jpg');
+        background-size: cover;
+        border: 5px solid #000;
+        transform-style: preserve-3d;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      @media screen and (max-width: 767px) {
+        .profile-image {
+          width: 100px;
+          height: 100px;
+          border-radius: 30%;
+          background-image: url('../assets/Darren Buck.jpg');
+          background-size: cover;
+          border: 3px solid #000; 
+        }
+      }
+  
+      .profile-container:hover .profile-image {
+        animation: rotateAnimation 4s infinite linear; /* Adjust duration and other properties as needed */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+  
+      @keyframes rotateAnimation {
+        from {
+          transform: rotateY(0deg) rotateX(0deg);
+        }
+        to {
+          transform: rotateY(360deg) rotateX(360deg);
+        }
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="profile-container">
+        <img class="profile-image" alt="">
+      </div>
+    </header>
 
     <main class="page-wrapper">
         <section class="page-section" id="about">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id corrupti illo sint iste ex, autem hic, quaerat sunt repellendus, facere maxime aspernatur debitis! Recusandae temporibus eos omnis harum velit.</p>
+            <article>
+                I am a web developer with a passion 
+                <br>for learning new technologies and 
+                <br>creating beautiful websites.
+            </article>
         </section>
 
-        <section class="page-section" id="work">
-            <h2>Work</h2>
+        <section class="image-section" id="projects">
+            <h2>Projects</h2>
             <div class="work-gallery">
-                <div class="work-item large">
-                    <img src="../assets/place holder.jpg" alt="placeholder1" class="your-class-id">
-                    <img src="../assets/place holder.jpg" alt="placeholder2" class="your-class-id">
-                    <img src="../assets/place holder.jpg" alt="placeholder3" class="your-class-id">
-                    <img src="../assets/place holder.jpg" alt="placeholder4" class="your-class-id">
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder1" class="idplaceholder1">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder2" class="idplaceholder2">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder3" class="idplaceholder3">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder4" class="idplaceholder4">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder5" class="idplaceholder5">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder6" class="idplaceholder6">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder7" class="idplaceholder7">
+                </div>
+                <div class="work-item">
+                    <img src="../assets/place holder.jpg" alt="placeholder8" class="idplaceholder8">
                 </div>
             </div>
-        </section>
-
-        <section class="page-section contact" id="contact">
-            <h2>Contact Me</h2>
         </section>
     </main>
 
     <footer>
-        <ul>
+        <section class="page-section" id="footer">
+            <ul>
             <li>
                 <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer">
-                    <img src="../assets/LinkedIn Logo.png" alt="LinkedIn Logo">
+                <img src="../assets/LinkedIn Logo.png" alt="LinkedIn Logo">
                 </a>
             </li>
             <li>
                 <a href="https://www.facebook.com/your-facebook-id" target="_blank" rel="noopener noreferrer">
-                    <img src="../assets/Facebook Logo.jpg" alt="Facebook Logo">
+                <img src="../assets/Facebook Logo.jpg" alt="Facebook Logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/ParboldCoder" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/GitHub Logo.png" alt="GitHub Logo">
                 </a>
             </li>
             <li>
                 <a href="mailto:darren.a.buck@gmail.com">
-                    <img src="../assets/Email Logo.png" alt="Email Logo">
+                <img src="../assets/Email Logo.png" alt="Email Logo">
                 </a>
             </li>
-        </ul>
+            </ul>
+        </section>
     </footer>
+    
 </body>
 </html>

@@ -1,80 +1,66 @@
+:root {
+    --background-color: #2F4F4F;
+    --text-color: #B9F2FF;
+    --image-color: #FF69B4;
+    --font-family: 'Times New Roman', Times, serif;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.hero-banner {
-    background-color: #0077b5;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
     text-align: center;
-    padding: 50px 0;
+    font-size: 30px;
+    margin: 0;
 }
 
-.hero-banner h2 {
-    margin: 0;
+article {
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .page-wrapper {
-    margin: 20px;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.page-section {
-    margin: 20px 0;
 }
 
 .work-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
 }
 
 .work-item {
-    flex: 1 1 calc(50% - 20px);
-    margin-bottom: 20px;
-    overflow: hidden;
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .work-item img {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Adjusted to set maximum width to 150px */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
+    width: 250px;
+    height: 250px
+    border-radius: 25px;
 }
 
-.page-section.contact {
-    text-align: center;
-}
-
-/* Styles for each placeholder class */
-.idplaceloderone img,
-.idplacelodertwo img,
-.idplaceloderthree img,
-.idplaceloderfour img {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Adjusted to set maximum width to 150px */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
+.idplaceholder1,
+.idplaceholder2,
+.idplaceholder3,
+.idplaceholder4,
+.idplaceholder5,
+.idplaceholder6,
+.idplaceholder7,
+.idplaceholder8 {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    filter: brightness(0.8) sepia(1) hue-rotate(300deg);
 }
