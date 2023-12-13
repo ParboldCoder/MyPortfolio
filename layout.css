@@ -51,14 +51,7 @@ article {
     border-radius: 25px;
 }
 
-.idplaceholder1,
-.idplaceholder2,
-.idplaceholder3,
-.idplaceholder4,
-.idplaceholder5,
-.idplaceholder6,
-.idplaceholder7,
-.idplaceholder8 {
+.idplaceholder {
     width: 250px;
     height: 250px;
     border-radius: 25px;
