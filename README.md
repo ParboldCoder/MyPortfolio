@@ -11,11 +11,13 @@ Also played around with some HTML to make my portfolio image to spin when the mo
 ## Application Image
 
 ![Application Image](./assets/ProfileScreenshot.png)
+<br>
+<br>
 ## Application URLs
 https://github.com/ParboldCoder/MyPortfolio
 <br>
 https://parboldcoder.github.io/MyPortfolio/
-
+<br>
 ## Author
 Darren Buck
 https://github.com/ParboldCoder

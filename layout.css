@@ -15,12 +15,13 @@ body {
 }
 
 article {
-    font-size: 25px;
+    font-size: 20pt;
     padding: 10px;
     margin: 10px;
 }
 
 .page-wrapper {
+    border: black 1px solid;
     padding: 20px;
 }
 
@@ -55,5 +56,6 @@ article {
     width: 250px;
     height: 250px;
     border-radius: 25px;
+    border: black 2px solid;
     filter: brightness(0.6) sepia(1) hue-rotate(300deg);
 }
