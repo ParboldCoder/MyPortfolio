@@ -48,12 +48,12 @@ article {
 .work-item img {
     width: 250px;
     height: 250px
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .idplaceholder {
     width: 250px;
     height: 250px;
     border-radius: 25px;
-    filter: brightness(0.8) sepia(1) hue-rotate(300deg);
+    filter: brightness(0.6) sepia(1) hue-rotate(300deg);
 }
