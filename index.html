@@ -1,102 +1,76 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="">
-    <title>Darren Buck // Web Developer</title>
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="dropdown.css">
-    <link rel="stylesheet" href="footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Portfolio Homepage</title>
 </head>
+
 <body>
-
-    <div class="dropdown">
-        <button class="dropbtn">Menu
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#footer">Contact</a>
-        </div>
-    </div>
-  </head>
-  <body>
-    <header>
-      <div class="profile-container">
-        <h1><b>Darren Buck</b></h1>
-        <img class="profile-image" alt="">
+  <nav id="navBar">
+    <div id="navigation">
+      <div id="logo" class="logo">
+        <img src="./assets/darrenbuck.png" alt="darren buck">
+        <h1>Darren Buck</h1>
       </div>
-    </header>
+      <div class="text-container">
+        <p>Web Design</p>
+        <p>Graphic Design</p>
+        <p>Photography</p>
+        <p>Projects</p>
+        <p>Contact Me</p>
+        </div>       
+  </nav>
 
-    <main class="page-wrapper">
-        <section class="page-section" id="about">
-            <h3>About Me</h3>
-            <article>
-                I am a web developer with a passion for learning new technologies and creating beautiful websites.
-            </article>
-        </section>
+  <section id="heroGrid">
+    <div id="featuredProject" class="heroGridArea">
+      <div id="headline">
+        <h2>Web Design Showcase</h2>
+        <p>Showcasing a collection of stunning web designs with modern aesthetics and functionality.</p>
+        <img src="https://placehold.co/600x400" alt="Featured Project Image">
+      </div>
+    </div>
+  </section>  
+  <div class="subHeading">
+    <h1>Portfolio Categories</h1>
+  </div>
+  <section id="categoryGrid">
+    <div id="webDesign" class="categoryGridArea">
+      <img src="https://placehold.co/300x200" alt="Web Design Image">
+      <div class="heading">Web Design</div>
+    </div>
+    <div id="graphicDesign" class="categoryGridArea">
+      <img src="https://placehold.co/300x200" alt="Graphic Design Image">
+      <div class="heading">Graphic Design</div>
+    </div>
+    <div id="photography" class="categoryGridArea">
+      <img src="https://placehold.co/300x200" alt="Photography Image">
+      <div class="heading">Photography</div>
+    </div>
+    <div id="projects" class="categoryGridArea">
+      <img src="https://placehold.co/300x200" alt="Other Projects Image">
+      <div class="heading">Other Projects</div>
+    </div>
+  </section> 
 
-        <section class="image-section" id="projects">
-            <h3>Projects</h3>
-            <div class="work-gallery">
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-                <div class="work-item">
-                    <img src="../assets/placeholder.png" alt="placeholder" class="idplaceholder">
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <section class="page-section" id="footer">
-            <h3>Contact Me</h3>
-            <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/LinkedIn Logo.png" alt="LinkedIn Logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/your-facebook-id" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/facebook.png" alt="Facebook Logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/ParboldCoder" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/GitHub Logo.png" alt="GitHub Logo">
-                </a>
-            </li>
-            <li>
-                <a href="mailto:darren.a.buck@gmail.com">
-                <img src="../assets/Email Logo.png" alt="Email Logo">
-                </a>
-            </li>
-            </ul>
-        </section>
-    </footer>
-    
+  <footer>
+    <div>
+      <section class="footer">
+      <p>Designed and developed by Darren Buck</p>
+      <p>&copy; 2023 ParboldCoder. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/your-profile" target="_blank"></a>
+          <img src="./assets/LinkedIn Logo.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://github.com/your-username" target="_blank"></a>
+          <img src="./assets/GitHub Logo.png" alt="GitHub Logo">
+        </a>
+        <a href="https://www.facebook.com/your-profile" target="_blank">
+          <img src="./assets/facebook.png" alt="Facebook Logo"></a>
+    </section>
+    </div>
+  </footer>
 </body>
 </html>
